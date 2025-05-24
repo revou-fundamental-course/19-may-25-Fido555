@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Konversi Suhu</title>
+    <link rel="stylesheet" href="../19-may-25-Fido555/css/style.css">
+</html>
+
+<body>
+    <header>
+        <h1>Konversi Temperatur by Fidog</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>Masukkan suhu dalam derajat Celcius (&deg;C) ke kotak dibawah</p>
+        </section>
+
+        <form>
+            <!--ini buat inputan suhu-->
+            <div>
+                <label for="suhu">Suhu dalam derajat Celcius (&deg;C)</label>
+                <input type="number" id="suhu" name="suhu" required>
+            </div>
+
+            <!--ini buat tombol action-->
+            <div>
+                <button>Konversi</button>
+                <button>Reset</button>
+                <button>Reverse</button>
+            </div>
+        </form>
+
+        <!--hasil operasinya-->
+        <section>
+            <div>
+                <label for="suhuFahrenheit">Hail konversi kedalam Fahrenheit (&deg;F)</label>
+                <input id="Fahrenheit" name="Fahrenheit" readonly>
+            </div>
+        </section>
+
+        <!--penjelasan-->
+        <section>
+            <div>
+                <label for="penjelasan">Penjelasan</label>
+                <textarea id="penjelasan" name="penjelasan" readonly></textarea>
+            </div>
+        </section>
+
+        <!--konten cara kerja hasil-->
+        <section>
+            <header>
+                <h2>Cara Kerja</h2>
+            </header>
+
+            <hr />
+
+            <div>
+                <p>Rumus konversi suhu</p>
+                <p class="rumus-content">S<sub>(&deg;F)</sub></p>
+            </div>
+        </section>
+    </main>
+</body>
