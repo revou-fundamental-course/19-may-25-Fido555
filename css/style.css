@@ -1,3 +1,8 @@
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /* Pusatkan semua teks */
+}
 
 .rumus-content {
     font-size: 24px;
@@ -5,7 +10,81 @@
 }
 
 main {
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    max-width: 500px;
+    margin: 32px auto; /* Tengah secara horizontal dan beri jarak atas bawah */
+    padding: 24px;
+    background: lightblue;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+form, section {
+    margin-bottom: 24px;
+}
+
+input, textarea {
+    display: block;
+    margin: 0 auto 12px auto;
+    text-align: center;
+}
+
+input[type=number] {
+    width: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    border: 0px;
+    padding: 8px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.padding-medium {
+    padding: 16px;
+}
+
+.btn-konversi {
+    background-color: darkgreen;
+}
+
+.btn-reset {
+    background-color: red;
+}
+
+.btn-reverse {
+    background-color: darkblue;
+}
+
+/* Tooltip styling */
+button .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 4px 10px;
+    position: absolute;
+    z-index: 1;
+    left: 50%; 
+    bottom: 125%;
+    transform: translateX(-50%);
+    transition: opacity 0.2s;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+button:hover .tooltip,
+button:focus .tooltip {
+    visibility: visible;
+    opacity: 1;
 }

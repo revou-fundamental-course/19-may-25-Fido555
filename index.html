@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Konversi Suhu</title>
     <link rel="stylesheet" href="../19-may-25-Fido555/css/style.css">
-</html>
+</head>
 
 <body>
     <header>
-        <h1>Konversi Temperatur by Fidog</h1>
+        <h1>Web Konversi Temperatur</h1>
+        <h2>Celcius ke Fahrenheit</h2>
     </header>
 
     <main>
@@ -18,30 +19,37 @@
             <p>Masukkan suhu dalam derajat Celcius (&deg;C) ke kotak dibawah</p>
         </section>
 
-        <form>
-            <!--ini buat inputan suhu-->
+        <form class="padding-medium">
+            <!--for temp input-->
             <div>
                 <label for="suhu">Suhu dalam derajat Celcius (&deg;C)</label>
+                <br>
                 <input type="number" id="suhu" name="suhu" required>
             </div>
 
-            <!--ini buat tombol action-->
+            <!--for action buttons-->
             <div>
-                <button>Konversi</button>
-                <button>Reset</button>
-                <button>Reverse</button>
+                <button id="btn-konversi" class="btn-konversi" type="button">Konversi
+                    <span class="tooltip">Shortcut : ENTER</span>
+                </button>
+                <button id="btn-reset" class="btn-reset" type="button">Reset
+                    <span class="tooltip">Shortcut : ESC</span>
+                </button>
+                <button id="btn-reverse" class="btn-reverse" type="button">Reverse
+                    <span class="tooltip">Shortcut : SPACEBAR</span>
+                </button>
             </div>
         </form>
 
-        <!--hasil operasinya-->
+        <!--operation-->
         <section>
             <div>
-                <label for="suhuFahrenheit">Hail konversi kedalam Fahrenheit (&deg;F)</label>
+                <label for="suhuFahrenheit">Hasil konversi kedalam Fahrenheit (&deg;F)</label>
                 <input id="Fahrenheit" name="Fahrenheit" readonly>
             </div>
         </section>
 
-        <!--penjelasan-->
+        <!--explanation-->
         <section>
             <div>
                 <label for="penjelasan">Penjelasan</label>
@@ -49,7 +57,7 @@
             </div>
         </section>
 
-        <!--konten cara kerja hasil-->
+        <!--content of how does it works-->
         <section>
             <header>
                 <h2>Cara Kerja</h2>
@@ -59,8 +67,20 @@
 
             <div>
                 <p>Rumus konversi suhu</p>
-                <p class="rumus-content">S<sub>(&deg;F)</sub></p>
+                    <div class="rumus-content">S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 9/5) + 32</div>
+                <p>atau</p>
+                    <div class="rumus-content">S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 1.8) + 32</div>
             </div>
         </section>
     </main>
+
+
+<!--for footer-->
+        <footer>
+           <p>&copy; © 2025 Fido.</p>
+        </footer>
+
+    <script src="../19-may-25-Fido555/js/script.js"></script>
 </body>
+
+</html>
